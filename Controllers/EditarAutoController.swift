@@ -44,22 +44,24 @@ class EditarAutoController : UIViewController {
         txtEditarConductor.isEnabled = true
         doTapEditar.isHidden = true
         doTapGuardarCambios.isHidden = false
-        doTapCancelar.isHidden = false
-        doTapCancelar.isEnabled = true
+        doTapCancelar.isHidden = true
+        doTapGuardarCambios.isEnabled = true
         
     }
     @IBAction func doTapGuardarCambio(_ sender: Any) {
+        
+        auto?.matricula = txtEditarMatricula.text
+        auto?.modelo = txtEditarModelo.text
+        auto?.marca = txtEditarMarca.text
+        auto?.anio = txtEditarAnio.text
+        auto?.conductor = txtEditarConductor.text
+        
+        callbackActualizarTabla!()
+        self.navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func doTapCancelar(_ sender: Any) {
         
-        txtEditarMatricula.isEnabled = false
-        txtEditarModelo.isEnabled = false
-        txtEditarMarca.isEnabled = false
-        txtEditarAnio.isEnabled = false
-        txtEditarConductor.isEnabled = false
-        doTapEditar.isHidden = false
-        doTapGuardarCambios.isHidden = true
-        doTapCancelar.isHidden = true
         
     }
 }

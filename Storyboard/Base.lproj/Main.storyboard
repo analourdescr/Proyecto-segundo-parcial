@@ -335,18 +335,18 @@
                                     <action selector="doTapGuardar:" destination="Tl3-zi-K23" eventType="touchUpInside" id="ZP9-6E-4Ao"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNZ-LY-egG">
-                                <rect key="frame" x="192" y="589" width="156" height="38"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYw-Ct-H7R">
+                                <rect key="frame" x="74" y="589" width="82" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Guardar cambios">
+                                <state key="normal" title="Cancelar">
                                     <color key="titleColor" red="0.1140157572" green="0.079380034899999993" blue="0.29422360749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="doTapEditar:" destination="REa-ci-rZ6" eventType="touchUpInside" id="U6i-hS-O4a"/>
-                                    <action selector="doTapGuardar:" destination="Tl3-zi-K23" eventType="touchUpInside" id="eTB-p5-yxd"/>
-                                    <action selector="doTapGuardarCambio:" destination="REa-ci-rZ6" eventType="touchUpInside" id="Z9E-Qf-01Y"/>
+                                    <action selector="doTapCancelar:" destination="REa-ci-rZ6" eventType="touchUpInside" id="CGL-2v-sEE"/>
+                                    <action selector="doTapEditar:" destination="REa-ci-rZ6" eventType="touchUpInside" id="8gH-II-mWa"/>
+                                    <action selector="doTapGuardar:" destination="Tl3-zi-K23" eventType="touchUpInside" id="RdE-GD-dwc"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HCG-GK-Mof">
@@ -391,23 +391,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYw-Ct-H7R">
-                                <rect key="frame" x="74" y="589" width="82" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNZ-LY-egG">
+                                <rect key="frame" x="193" y="567" width="156" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Cancelar">
+                                <state key="normal" title="Guardar cambios">
                                     <color key="titleColor" red="0.1140157572" green="0.079380034899999993" blue="0.29422360749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="doTapCancelar:" destination="REa-ci-rZ6" eventType="touchUpInside" id="CGL-2v-sEE"/>
-                                    <action selector="doTapEditar:" destination="REa-ci-rZ6" eventType="touchUpInside" id="8gH-II-mWa"/>
-                                    <action selector="doTapGuardar:" destination="Tl3-zi-K23" eventType="touchUpInside" id="RdE-GD-dwc"/>
+                                    <action selector="doTapEditar:" destination="REa-ci-rZ6" eventType="touchUpInside" id="U6i-hS-O4a"/>
+                                    <action selector="doTapGuardar:" destination="Tl3-zi-K23" eventType="touchUpInside" id="eTB-p5-yxd"/>
+                                    <action selector="doTapGuardarCambio:" destination="REa-ci-rZ6" eventType="touchUpInside" id="Z9E-Qf-01Y"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fNZ-LY-egG" firstAttribute="top" secondItem="mTM-92-Be6" secondAttribute="bottom" constant="53" id="0J6-xU-yO6"/>
                             <constraint firstItem="Tba-Yo-vsv" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qDG-rj-TDg" secondAttribute="trailing" symbolic="YES" id="0bn-FH-La3"/>
                             <constraint firstItem="Tba-Yo-vsv" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bGs-xW-Nap" secondAttribute="trailing" symbolic="YES" id="2z5-Ln-wJB"/>
                             <constraint firstItem="qck-FH-IJI" firstAttribute="leading" secondItem="z5H-Sa-MdG" secondAttribute="trailing" constant="20" id="DFW-nA-ys5"/>
@@ -439,6 +439,7 @@
                             <constraint firstItem="Y65-gd-xr8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Tba-Yo-vsv" secondAttribute="leading" id="rti-rc-kcH"/>
                             <constraint firstItem="HCG-GK-Mof" firstAttribute="leading" secondItem="z5H-Sa-MdG" secondAttribute="trailing" constant="20" id="s6P-j4-3aD"/>
                             <constraint firstItem="qDG-rj-TDg" firstAttribute="leading" secondItem="bGs-xW-Nap" secondAttribute="leading" id="uZG-k6-Cn8"/>
+                            <constraint firstItem="Tba-Yo-vsv" firstAttribute="trailing" secondItem="fNZ-LY-egG" secondAttribute="trailing" constant="65" id="wqN-C1-agZ"/>
                             <constraint firstItem="z5H-Sa-MdG" firstAttribute="top" secondItem="Tba-Yo-vsv" secondAttribute="top" constant="20" id="yGN-6M-hrT"/>
                             <constraint firstItem="Mxk-1M-TBa" firstAttribute="top" secondItem="fZG-r5-ZLu" secondAttribute="bottom" constant="37" id="zOj-fN-vsI"/>
                         </constraints>
