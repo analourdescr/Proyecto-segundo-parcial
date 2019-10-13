@@ -22,6 +22,7 @@ class EditarAutoController : UIViewController {
     @IBOutlet weak var txtEditarConductor: UITextField!
     
     override func viewDidLoad() {
+        self.title = "Detalle"
         Image.image = UIImage(named: auto?.imagen ?? "ImageCelda")
         txtEditarMatricula.text = auto?.matricula
         txtEditarModelo.text = auto?.modelo
@@ -37,6 +38,7 @@ class EditarAutoController : UIViewController {
     
     @IBAction func doTapEditar(_ sender: Any) {
         
+        self.title = "Editar"
         txtEditarMatricula.isEnabled = true
         txtEditarModelo.isEnabled = true
         txtEditarMarca.isEnabled = true

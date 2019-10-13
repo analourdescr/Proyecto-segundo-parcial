@@ -23,7 +23,7 @@ class NuevoAutoController : UIViewController {
     @IBOutlet weak var txtNuevoConductor: UITextField!
     
     override func viewDidLoad() {
-        self.title = "Nuevo Auto"
+        self.title = "Nuevo"
         
         txtNuevaMatricula.text = ""
         txtNuevoModelo.text = ""

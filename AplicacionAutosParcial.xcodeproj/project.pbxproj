@@ -18,6 +18,9 @@
 		F6C600BD2352927B0039731A /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C600BC2352927B0039731A /* Auto.swift */; };
 		F6C600BF2352E8A20039731A /* NuevoAutoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C600BE2352E8A10039731A /* NuevoAutoController.swift */; };
 		F6C600C12352F9D00039731A /* EditarAutoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C600C02352F9D00039731A /* EditarAutoController.swift */; };
+		F6C600C323530DBD0039731A /* DetalleCargaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C600C223530DBD0039731A /* DetalleCargaController.swift */; };
+		F6C600C52353137E0039731A /* Carga.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C600C42353137E0039731A /* Carga.swift */; };
+		F6C600C7235315BB0039731A /* CeldaCargaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C600C6235315BB0039731A /* CeldaCargaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		F6C600BC2352927B0039731A /* Auto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
 		F6C600BE2352E8A10039731A /* NuevoAutoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoAutoController.swift; sourceTree = "<group>"; };
 		F6C600C02352F9D00039731A /* EditarAutoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarAutoController.swift; sourceTree = "<group>"; };
+		F6C600C223530DBD0039731A /* DetalleCargaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleCargaController.swift; sourceTree = "<group>"; };
+		F6C600C42353137E0039731A /* Carga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carga.swift; sourceTree = "<group>"; };
+		F6C600C6235315BB0039731A /* CeldaCargaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaCargaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,8 @@
 				F6C600B72352903A0039731A /* CeldaAutoController.swift */,
 				F6C600BE2352E8A10039731A /* NuevoAutoController.swift */,
 				F6C600C02352F9D00039731A /* EditarAutoController.swift */,
+				F6C600C223530DBD0039731A /* DetalleCargaController.swift */,
+				F6C600C6235315BB0039731A /* CeldaCargaController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				F6C600BC2352927B0039731A /* Auto.swift */,
+				F6C600C42353137E0039731A /* Carga.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -294,10 +303,13 @@
 			files = (
 				F6C600B82352903A0039731A /* CeldaAutoController.swift in Sources */,
 				F6C6008C23526C7C0039731A /* ViewController.swift in Sources */,
+				F6C600C7235315BB0039731A /* CeldaCargaController.swift in Sources */,
 				F6C600BD2352927B0039731A /* Auto.swift in Sources */,
 				F6C6008A23526C7C0039731A /* AppDelegate.swift in Sources */,
+				F6C600C52353137E0039731A /* Carga.swift in Sources */,
 				F6C600BF2352E8A20039731A /* NuevoAutoController.swift in Sources */,
 				F6C600C12352F9D00039731A /* EditarAutoController.swift in Sources */,
+				F6C600C323530DBD0039731A /* DetalleCargaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
