@@ -53,10 +53,25 @@ class DetalleCargaController : UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 110
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            self.cargas.remove(at: indexPath.row)
+            self.cargasTableView.reloadData()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "goToAgregarCarga" {
+            let destino = segue.destination as? NuevaCargaController
+            cargas.append(Carga(totalDinero: "", totalLitros: ""))
+            
+            
+            destino?.cargas = cargas[cargas.count-1]
+            
+            destino?.callbackActualizarTablaCarga = recargarTabla
+        }
     }
 }

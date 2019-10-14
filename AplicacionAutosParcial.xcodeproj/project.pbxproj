@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6A7D7A62353FBF0001F886F /* NuevaCargaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A7D7A52353FBF0001F886F /* NuevaCargaController.swift */; };
 		F6C6008A23526C7C0039731A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C6008923526C7C0039731A /* AppDelegate.swift */; };
 		F6C6008C23526C7C0039731A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C6008B23526C7C0039731A /* ViewController.swift */; };
 		F6C6008F23526C7C0039731A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C6008D23526C7C0039731A /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F6A7D7A52353FBF0001F886F /* NuevaCargaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaCargaController.swift; sourceTree = "<group>"; };
 		F6C6008623526C7C0039731A /* AplicacionAutosParcial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AplicacionAutosParcial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C6008923526C7C0039731A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6C6008B23526C7C0039731A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				F6C600C02352F9D00039731A /* EditarAutoController.swift */,
 				F6C600C223530DBD0039731A /* DetalleCargaController.swift */,
 				F6C600C6235315BB0039731A /* CeldaCargaController.swift */,
+				F6A7D7A52353FBF0001F886F /* NuevaCargaController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				F6C600C52353137E0039731A /* Carga.swift in Sources */,
 				F6C600BF2352E8A20039731A /* NuevoAutoController.swift in Sources */,
 				F6C600C12352F9D00039731A /* EditarAutoController.swift in Sources */,
+				F6A7D7A62353FBF0001F886F /* NuevaCargaController.swift in Sources */,
 				F6C600C323530DBD0039731A /* DetalleCargaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
