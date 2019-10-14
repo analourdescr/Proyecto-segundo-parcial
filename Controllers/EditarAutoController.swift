@@ -66,4 +66,16 @@ class EditarAutoController : UIViewController {
         
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToDetalleCarga" {
+            
+            let destino = segue.destination as? DetalleCargaController
+            destino?.matricula = auto?.matricula
+            destino?.imagen = UIImage(named: auto?.imagen ?? "ImageCelda")
+            
+        }
+        
+    }
 }

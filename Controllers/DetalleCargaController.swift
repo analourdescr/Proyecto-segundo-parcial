@@ -10,16 +10,25 @@ import Foundation
 import UIKit
 
 class DetalleCargaController : UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
     @IBOutlet weak var cargasTableView: UITableView!
     
-    
+    var auto : Auto?
+    var matricula : String?
+    var imagen : UIImage?
     var cargas : [Carga] = []
+    
+    @IBOutlet weak var imagenCarga: UIImageView!
+    @IBOutlet weak var lblMatriculaCarga: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Detalle Cargas"
         
-        cargas.append(Carga(matriculaAuto: "", totalDinero: "200", totalLitros: "10.4"))}
+        imagenCarga.image = imagen
+        lblMatriculaCarga.text = matricula
+        
+        cargas.append(Carga(totalDinero: "200", totalLitros: "10.4"))}
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -44,7 +53,7 @@ class DetalleCargaController : UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 155
+        return 100
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

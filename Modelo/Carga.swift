@@ -10,13 +10,11 @@ import Foundation
 
 class Carga {
     
-    var matriculaAuto : String?
     var totalDinero: String?
     var totalLitros : String?
     
-    init(matriculaAuto: String, totalDinero : String, totalLitros: String) {
+    init(totalDinero : String, totalLitros: String) {
         
-        self.matriculaAuto = matriculaAuto
         self.totalDinero = totalDinero
         self.totalLitros = totalLitros
         
