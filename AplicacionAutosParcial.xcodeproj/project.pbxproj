@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F6A7D7A62353FBF0001F886F /* NuevaCargaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A7D7A52353FBF0001F886F /* NuevaCargaController.swift */; };
+		F6A7D7A9235405A6001F886F /* thumbnail_image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6A7D7A8235405A6001F886F /* thumbnail_image1.jpg */; };
 		F6C6008A23526C7C0039731A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C6008923526C7C0039731A /* AppDelegate.swift */; };
 		F6C6008C23526C7C0039731A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C6008B23526C7C0039731A /* ViewController.swift */; };
 		F6C6008F23526C7C0039731A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C6008D23526C7C0039731A /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		F6A7D7A52353FBF0001F886F /* NuevaCargaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaCargaController.swift; sourceTree = "<group>"; };
+		F6A7D7A8235405A6001F886F /* thumbnail_image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thumbnail_image1.jpg; path = ../../../Downloads/thumbnail_image1.jpg; sourceTree = "<group>"; };
 		F6C6008623526C7C0039731A /* AplicacionAutosParcial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AplicacionAutosParcial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C6008923526C7C0039731A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6C6008B23526C7C0039731A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,9 +92,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6A7D7A7235400EC001F886F /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F6A7D7A8235405A6001F886F /* thumbnail_image1.jpg */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 		F6C6007D23526C7C0039731A = {
 			isa = PBXGroup;
 			children = (
+				F6A7D7A7235400EC001F886F /* Wireframe */,
 				F6C600BB2352926D0039731A /* Modelo */,
 				F6C600BA2352906F0039731A /* Storyboard */,
 				F6C600B9235290540039731A /* Controllers */,
@@ -279,6 +290,7 @@
 			files = (
 				F6C6009423526C830039731A /* LaunchScreen.storyboard in Resources */,
 				F6C6009123526C830039731A /* Assets.xcassets in Resources */,
+				F6A7D7A9235405A6001F886F /* thumbnail_image1.jpg in Resources */,
 				F6C6008F23526C7C0039731A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
